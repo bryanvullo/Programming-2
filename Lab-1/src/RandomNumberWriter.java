@@ -1,11 +1,7 @@
-import java.io.ByteArrayOutputStream;
-import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.OutputStream;
-import java.math.BigInteger;
 import java.nio.ByteBuffer;
 import java.util.Random;
 import uk.ac.soton.ecs.comp1206.labtestlibrary.interfaces.io.RandomIO;
