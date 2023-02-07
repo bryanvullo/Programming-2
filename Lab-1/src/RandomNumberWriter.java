@@ -7,12 +7,13 @@ import java.util.Random;
 import uk.ac.soton.ecs.comp1206.labtestlibrary.interfaces.io.RandomIO;
 
 public class RandomNumberWriter implements RandomIO {
+
   Random random;
+
   public RandomNumberWriter(long seed) {
     random = new Random(seed);
   }
 
-  @Override
   public void writeRandomChars(String path) throws IOException {
     File file = new File(path);
     FileWriter writer = new FileWriter(file);
@@ -23,7 +24,6 @@ public class RandomNumberWriter implements RandomIO {
     writer.close();
   }
 
-  @Override
   public void writeRandomByte(String path) throws IOException {
     File file = new File(path);
     FileOutputStream fileOutputStream = new FileOutputStream(file);

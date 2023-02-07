@@ -26,7 +26,7 @@ public class JavaFileUtil implements ConcatenateJavaFiles {
     }
 
     //gets each file in the directory, checks if it ends with .java and
-      // writes each line to the concatenated file
+    // writes each line to the concatenated file
     for (File file : dir.listFiles()) {
       if (file.getName().endsWith(".java")) {
         Scanner reader = new Scanner(new FileReader(file));
