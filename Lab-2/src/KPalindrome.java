@@ -2,10 +2,6 @@ import uk.ac.soton.ecs.comp1206.labtestlibrary.interfaces.recursion.PalindromeCh
 
 public class KPalindrome implements PalindromeChecker {
 
-  public static void main(String[] args) {
-    KPalindrome palindrome = new KPalindrome();
-    System.out.println(palindrome.isKPalindrome("ABCDEF", 3));
-  }
   public boolean isKPalindrome(String string, int k) {
     if (k < 0) {
       return false;
