@@ -7,10 +7,10 @@ public class KPalindrome implements PalindromeChecker {
     System.out.println(palindrome.isKPalindrome("ABCDEF", 3));
   }
   public boolean isKPalindrome(String string, int k) {
-    if (string.length() <= 2) {
-      return true;
-    } else if (k < 0) {
+    if (k < 0) {
       return false;
+    } else if (string.length() <= 1) {
+      return true;
     } else {
       if (string.charAt(0) == string.charAt(string.length()-1)) {
         String substring = string.substring(1, string.length()-1);
