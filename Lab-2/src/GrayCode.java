@@ -9,9 +9,10 @@ public class GrayCode {
       return new int[] {0,1};
     } else {
       for (int i = 0; i < rows/2; i++) {
-        arr[i] = new int[]{0, grayCode(n - 1)};
+        //arr[i] = new int[]{0, grayCode(n - 1)};
       }
     }
+    return null;
   }
 
 }
