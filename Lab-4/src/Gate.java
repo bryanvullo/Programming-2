@@ -10,7 +10,9 @@ public class Gate implements Runnable{
 
   public void run() {
     for (int i = 0; i < guests; i++) {
-      counter.addOne();
+      synchronized (counter) {
+        counter.addOne();
+      }
       System.out.println(Thread.currentThread().getName() + "has added to the counter");
     }
   }
