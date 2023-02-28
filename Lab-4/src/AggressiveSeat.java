@@ -7,11 +7,11 @@ public class AggressiveSeat implements Seat {
   ReentrantLock rightFork;
 
   public void askFork1() {
-    leftFork.lock();
+    rightFork.lock();
   }
 
   public void askFork2() {
-    rightFork.lock();
+    leftFork.lock();
   }
 
   public void assignForks(ReentrantLock leftFork, ReentrantLock rightFork) {
