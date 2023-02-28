@@ -44,7 +44,8 @@ public class CyclicQueue implements NumberQueue {
   }
 
   public boolean isFull() {
-    return head == tail + 1;
+    return ((tail == size && head == 0) //if tail is at the end and head is at the start
+     || head == tail + 1);//if the tail is behind the head
   }
 
   public static void main(String[] args) {

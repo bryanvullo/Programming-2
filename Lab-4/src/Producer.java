@@ -27,6 +27,7 @@ public class Producer extends FactoryWorker {
         message(number);
       } catch (Exception e) {
         messageError();
+        break;
       }
     }
   }

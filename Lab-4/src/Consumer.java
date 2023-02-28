@@ -22,6 +22,7 @@ public class Consumer extends FactoryWorker {
         message(number);
       } catch (Exception e) {
         messageError();
+        break;
       }
     }
   }

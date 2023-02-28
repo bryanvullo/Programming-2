@@ -5,7 +5,7 @@ public class Belt extends CyclicQueue {
   }
 
   public synchronized void enqueue(int item) {
-    if (isFull()) {
+    while(isFull()) {
       try {
         this.wait();
       } catch (InterruptedException e) {
@@ -17,7 +17,7 @@ public class Belt extends CyclicQueue {
   }
 
   public synchronized int dequeue() {
-    if (isEmpty()) {
+    while (isEmpty()) {
       try {
         this.wait();
       } catch (InterruptedException e) {
