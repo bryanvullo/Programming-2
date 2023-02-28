@@ -1,7 +1,7 @@
 import java.util.concurrent.locks.ReentrantLock;
 import uk.ac.soton.ecs.comp1206.labtestlibrary.interfaces.threading.Seat;
 
-public class PassiveSeat implements Seat {
+public class LeftHandedSeat implements Seat {
 
   ReentrantLock leftFork;
   ReentrantLock rightFork;
